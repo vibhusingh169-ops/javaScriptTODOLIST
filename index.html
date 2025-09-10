@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
-    
-        <head>
-        <title>example of javascript background color</title>
-        </head>
-    <body>
-        <h2>changed background color</h2>
-        <button on click="change backgroundcolor()">change background color</button>
-        <script>
-        
-            function changedBackgroundcolor() {
-                document.body.style.backgroundcolor="lightblue";
-                document.body.style.color="red"
-                document.body.fontweight="bold"
-                document.body.fontstyle="italic"
-
-            }
-        </script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Background Example</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+        #changeBgBtn {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="changeBgBtn">Change Background</button>
+    <script src="changeBackground.js"></script>
+</body>
 </html>
